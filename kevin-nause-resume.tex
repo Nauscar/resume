@@ -1,0 +1,302 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[print]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\usepackage{ragged2e}
+\hypersetup{colorlinks=true,urlcolor=blue}
+\usepackage[none]{hyphenat}
+
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+\begin{document}
+
+\header{Kevin }{Nause}{\textit{Firmware} Engineer} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{Contact}
+~
+425.626.7520
+%+0 (000) 111 1112
+~
+{\scriptsize \href{mailto:kevin@nause.engineering}{kevin@nause.engineering}}
+%\href{http://www.smith.com}{http://www.smith.com}
+{\scriptsize \href{https://ca.linkedin.com/in/kevinnause}{ca.linkedin.com/in/kevinnause}}
+{\scriptsize \href{https://github.com/Nauscar}{github.com/Nauscar}}
+\section{Programming}
+C, C++, Java, C\#, 
+x86 \& ARM Assembly, 
+Python, JavaScript
+\section{Frameworks}
+OpenCL, OpenMP,
+Hadoop, Thrift, 
+Qt, ASP .NET
+\section{Interests}
+{Digital Photography, Performance Vehicles, DIY, Ice Hockey, Homebrewing}
+\section{About}
+{I enjoy low level programming on platforms such as embedded systems and operating systems.
+Working on wearable hacks and obtaining root access on mobile devices are also side interests. 
+Computer security and logical analysis are key interests of mine. 
+I have been a Linux enthusiast since I typed "Hello World" for the first time and have adored penguins ever since. 
+The first thing I do when I sit down at a computer is change the keyboard layout to Dvorak and plug in a keyboard that is older than myself: the IBM Model M.}
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{Sep 2011}
+{Apr 2016}
+{Bachelor of Applied Science (B.A.Sc.)}
+{University of Waterloo}
+{Computer Engineering}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{Jul 2016}
+{to Present}
+{Microsoft}
+{Redmond, Washington}
+{\emph{Firmware Engineer}
+\begin{itemize}
+\item Design firmware for the MCUs used in Surface Devices
+\item Languages Used: C, ARM Assembly, C\#, PowerShell
+\end{itemize}
+}\\
+
+%------------------------------------------------
+
+\entry
+{Aug 2015}
+{(5 months)}
+{Pebble Technology}
+{Kitchener, Ontario}
+{\emph{Embedded Firmware Engineer}
+\begin{itemize}
+\item Worked on implementing and debugging drivers, recovery firmware, and system applications on the Pebble OS (based on FreeRTOS)
+\item A part of the Timeline for the Pebble Classic team
+\item Team's primary focus was porting the current firmware to an older device with significantly less flash storage and a black and white screen
+\item Debugging using GDB and disassembler
+\item Languages Used: C, ARM Assembly, Python
+\end{itemize}
+}\\
+%------------------------------------------------
+
+\entry
+{Jan 2015}
+{(4 months)}
+{Motorola}
+{Kitchener, Ontario}
+{\emph{Security Engineer}
+\begin{itemize}
+\item Discovered and patched vulnerabilities, resource leaks, and concurrency problems in Android OS, Motorola's MSM kernel, and Moto X sensor hub
+\item Used static analysis to assist in discovering security vulnerabilities
+\item Traced execution flow to isolate false positives or potential exploits
+\item Languages Used: C, C++, Java
+\end{itemize}
+}\\
+%------------------------------------------------
+
+\entry
+{Sep 2014}
+{(8 months)}
+{Computer Aided Reasoning Group}
+{Waterloo, Ontario}
+{\emph{Undergraduate Research Assistant, Unviersity of Waterloo}
+\begin{itemize}
+\item Report to Professor Vijay Ganesh 
+\item Researched the topic of SAT solvers and their underlying heuristics
+\item Primary focus involved the relevance of backdoor variables and community structure for the VSIDS decision heuristic
+\item Learned concepts relevant to static analysis, symbolic execution, and Return Oriented Programming (ROP) 
+\item Languages Used: C, C++, x86 Assembly, Java
+\end{itemize}
+}\\
+
+%------------------------------------------------
+
+\entry
+{May 2014}
+{(4 months)}
+{ON Semiconductor}
+{Waterloo, Ontario}
+{\emph{Embedded Tools Developer}
+\begin{itemize}
+\item Designed Bluetooth Low Energy GATT services for functions such as data streaming, audio streaming, and status updates
+\item Embedded programming with BLE enabled medical devices such as hearing aids, insulin monitors, and heart rate monitors
+\item Programmed Windows and Android client devices
+\item Languages Used: C, C++, Java, ARM Assembly
+\end{itemize}
+}\\
+
+%------------------------------------------------
+
+\end{entrylist}
+
+\goodbreak
+\newgeometry{left=2cm, right=2cm}
+\renewcommand{\entry}[5]{%
+  \parbox[t]{1.4cm}{\footnotesize \textbf{#1} \\ \scriptsize\addfontfeature{Color=lightgray} #2}&\parbox[t]{15.4cm}{%    
+    \textbf{#3}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #4}%
+    \justify #5\vspace{\parsep}%
+  }\\}
+
+\begin{entrylist}
+
+\entry
+{Sep 2013}
+{(4 months)}
+{eSolutionsGroup}
+{Waterloo, Ontario}
+{\emph{Mobile Developer}
+\begin{itemize}
+\item Designed a real-time transit prediction system using GTFS data and protocol buffers
+\item Configured database, and server communications using MVC
+\item Mobile development for client side application 
+\item Languages Used: C\# (ASP .NET), SQL, JavaScript
+\end{itemize}
+}\\
+
+%------------------------------------------------
+
+\entry
+{May 2012}
+{(16 months)}
+{Regional Municipality of York}
+{Richmond Hill, Ontario}
+{\emph{Transit Management Systems}
+\begin{itemize}
+\item Worked with GTFS data and real-time prediction feeds for bus schedules
+\item Hands on work with transit embedded systems and fare management systems
+\item Contributed to the OneBusAway open source project
+\item Languages Used: C\#, Java
+\end{itemize}
+}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+\section{Relevant Courses}
+\begin{entrylist}
+\entry
+{ECE 459}
+{}
+{Programming for Performance}
+{University of Waterloo}
+{Explored techniques using multi-core processing, concurrency, and cache performance and consistency.  Studied theorems such as Amdahl's Law.  Used tools and frameworks such as Valgrind, OpenMP, OpenCL, and Hadoop.} \\
+
+\entry
+{ECE 454}
+{}
+{Distributed Computing}
+{University of Waterloo}
+{Learned principles of distributed computing such as architectures, middleware, virtualization, upper layer network protocols, inter process communication, and remote procedure calling.  Distributed tasks over multiple systems using Hadoop MapReduce framework.} \\
+
+\entry
+{ECE 458}
+{}
+{Computer Security}
+{University of Waterloo}
+{Studied security models, vulnerabilities, exploits, and security design principals.  Explored topics such as cryptography, hashes, Message Authentication Code (MAC), buffer overflows, control hijack attacks, Man in the Middle (MITM), ARP poisoning, side channel attacks, and fuzzing.}
+\end{entrylist}
+
+\section{Projects}
+\begin{entrylist}
+\entry
+{Sep 2015}
+{}
+{Automated Home Brewery System}
+{Brew It Yourself}
+{The objective of this project is to combine homebrewing experience with engineering design, and construct a single vessel brewing system. By maintaining a strict control of key parameters, the brewing process is regulated using a combination of fluid mechanics, heat transfer, digital controls, power systems, embedded robotics and mobile development.  For more information please see the \href{https://github.com/BrewItYourself/Documentation/blob/master/Final\%20Report/finalreportpdf/final-report.pdf}{Technical Report} on GitHub.}
+\\
+\entry
+{Jan 2014}
+{}
+{Myo DSLR Control}
+{Thalmic Labs}
+{After being accepted into Thalmic Lab's alpha test program, this project focused on creating an interface between the Myo armband and an Arduino to control the shutter of a DSLR via the remote trigger pin-out and an IR sensor.  This concept was than expanded to utilize TCP/IP communications in order to control the camera's shutter at even greater distances and remote locations.}
+\end{entrylist}
+
+%\section{Awards}
+%\begin{entrylist}
+
+%------------------------------------------------
+
+%\entry
+%{Aug 2011}
+%{}
+%{Municipal Engineering Award}
+%{Municipal Engineers Association}
+%{Awarded to the top essay entered in the topic of public interest related to municipal engineering.  This sparked a personal interest in the effects of technology on society and their resulting communication networks.}
+%------------------------------------------------
+%\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+%
+%\section{publications}
+%
+%\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+%
+%\printbibsection{book}{books} % Print all books from the bibliography
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=bibheading]
+%\end{refsection}
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=bibheading]
+%\end{refsection}
+%
+%\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+%
+%\printbibsection{report}{research reports} % Print all research reports from the bibliography
+%
+%----------------------------------------------------------------------------------------
+\end{document}
