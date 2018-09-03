@@ -48,7 +48,7 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage{unicode-math}
 
 \newfontfamily\bodyfont[]{Georgia}
 \newfontfamily\thinfont[]{Georgia}
@@ -146,7 +146,7 @@
 }
 %\renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[5]{%
-  \parbox[t]{1.4cm}{\footnotesize \textbf{#1} \\ \scriptsize\addfontfeature{Color=lightgray} #2}&\parbox[t]{11.8cm}{%    
+  \parbox[t]{1.4cm}{\footnotesize \textbf{#1} \\ \scriptsize\addfontfeature{Color=lightgray} #2}&\parbox[t]{12.2cm}{%    
     \textbf{#3}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #4}%
