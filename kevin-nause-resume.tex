@@ -29,7 +29,7 @@
 \setlist[itemize]{leftmargin=*}
 \begin{document}
 
-\header{Kevin }{Nause}{\textit{Senior Security Consultant}} % Your name and current job title/field
+\header{Kevin }{Nause}{\textit{Senior Security Software Engineer}} % Your name and current job title/field
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
@@ -46,21 +46,21 @@
 {\scriptsize \href{https://linkedin.com/in/kevinnause}{linkedin.com/in/kevinnause}}
 {\scriptsize \href{https://github.com/Nauscar}{github.com/Nauscar}}
 \section{Programming}
-C, C++, Java, C\#, 
+Rust, C, C++, C\#,
 x86 \& ARM Assembly, 
-Go, Python, JavaScript
+Go, Python, Java
 \section{Frameworks}
 OpenCL, OpenMP,
 Hadoop, Thrift, 
 Qt, ASP .NET
 \section{Interests}
-{Digital Photography, Performance Vehicles, Homebrewing}
+{Embedded Systems, Photography, Performance Vehicles}
 \section{About}
 {I enjoy low level programming on platforms such as embedded systems and operating systems.
 Working on wearable hacks and obtaining root access on mobile devices are also side interests. 
-Computer security and logical analysis are key interests of mine. 
+Computer security and static analysis are key interests of mine. 
 I have been a Linux enthusiast since I typed "Hello World" for the first time and have adored penguins ever since. 
-The first thing I do when I sit down at a computer is change the keyboard layout to Dvorak and plug in a keyboard that is older than myself: the IBM Model M.}
+The first thing I do when I sit down at a computer is change the keyboard layout to Dvorak and plug in an IBM Model M keyboard.}
 \end{aside}
 
 %----------------------------------------------------------------------------------------
@@ -74,8 +74,8 @@ The first thing I do when I sit down at a computer is change the keyboard layout
 %------------------------------------------------
 
 \entry
-{Sep 2011}
-{Apr 2016}
+{2016}
+{}
 {Bachelor of Applied Science (B.A.Sc.)}
 {University of Waterloo}
 {Computer Engineering}
@@ -93,8 +93,22 @@ The first thing I do when I sit down at a computer is change the keyboard layout
 \begin{entrylist}
 
 \entry
-{Nov 2018}
+{Feb 2020}
 {(to Present)}
+{Microsoft}
+{Redmond, Washington}
+{\emph{Senior Security Software Engineer}
+\begin{itemize}
+\item Designing, implementing and porting security features to Windows
+\item Assisting external teams with implementing security requirements
+\item Researching future security technologies for business success
+\end{itemize}
+Languages Used: Rust, C, C++, x86 \& ARM Assembly \\
+}
+
+\entry
+{Nov 2018}
+{(1 yrs 3mos)}
 {NCC Group}
 {Seattle, Washington}
 {\emph{Senior Security Consultant}
@@ -145,6 +159,20 @@ Hardware: STM32F4 ARM Cortex-M4, STM32F2 ARM Cortex-M3, TI CC2564
 Languages Used: C, ARM Assembly, Python \\
 }
 
+\end{entrylist}
+
+\goodbreak
+\newgeometry{left=1cm, right=1cm, top=1cm, bottom=1cm}
+\renewcommand{\entry}[5]{%
+  \parbox[t]{1.4cm}{\footnotesize \textbf{#1} \\ \scriptsize\addfontfeature{Color=lightgray} #2}&\parbox[t]{18.0cm}{%    
+    \textbf{#3}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #4}%
+    \justify #5\vspace{\parsep}%
+  }\\}
+
+\begin{entrylist}
+
 \entry
 {Jan 2015}
 {(4 months)}
@@ -158,22 +186,8 @@ Languages Used: C, ARM Assembly, Python \\
 \end{itemize}
 Products: Moto E/G/X, Moto 360 \\
 Hardware: TI OMAP 3, Qualcomm PM8921 PMIC, NXP 44701 NFC \\
-Languages Used: C, C++, Java
+Languages Used: C, C++, Java \\
 }
-
-\end{entrylist}
-
-\goodbreak
-\newgeometry{left=2cm, right=2cm}
-\renewcommand{\entry}[5]{%
-  \parbox[t]{1.4cm}{\footnotesize \textbf{#1} \\ \scriptsize\addfontfeature{Color=lightgray} #2}&\parbox[t]{15.8cm}{%    
-    \textbf{#3}%
-    \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #4}%
-    \justify #5\vspace{\parsep}%
-  }\\}
-
-\begin{entrylist}
 
 \entry
 {Sep 2014}
@@ -234,22 +248,39 @@ Languages Used: C\#, Java \\
 \end{entrylist}
 
 \section{Projects}
+\emph{Weekend projects demonstrating my learnings in Rust over the past year}\\
+
 \begin{entrylist}
 
 \entry
-{Sep 2015}
+{Nov 2021}
 {}
-{Automated Home Brewery System}
-{Brew It Yourself}
-{The objective of this project is to combine homebrewing experience with engineering design, and construct a single vessel brewing system. By maintaining a strict control of key parameters, the brewing process is regulated using a combination of fluid mechanics, heat transfer, digital controls, power systems, embedded robotics and mobile development.  For more information please see the \href{https://github.com/BrewItYourself/Documentation/blob/master/Final\%20Report/finalreportpdf/final-report.pdf}{Design Overview} on GitHub.}\\
+{Determinate}
+{\href{https://github.com/Nauscar/determinate}{Github Repo}}
+{Procedural macro attributes to mark a function as determinate or indeterminate for testing runtime determinism.}\\
 
 \entry
-{Jan 2014}
+{Oct 2021}
 {}
-{Myo DSLR Control}
-{Thalmic Labs}
-{After being accepted into Thalmic Lab's alpha test program, this project focused on creating an interface between the Myo armband and an Arduino to control the shutter of a DSLR via the remote trigger pin-out and an IR sensor.  This concept was than expanded to utilize TCP/IP communications in order to control the camera's shutter at even greater distances and remote locations.}
+{NRF52 Firmware Demo}
+{\href{https://github.com/Nauscar/nrf52-fw-demo}{Github Repo}}
+{A demonstration of the Real-Time Interrupt-driven Concurrency (RTIC) framework running on the nrf52840.}\\
+
+\entry
+{Sep 2021}
+{}
+{Bare Metal Runtimes}
+{\href{https://github.com/Nauscar/rt-rs}{Github Repo}}
+{Bare metal Rust runtimes for no\_std for ARM and RISC-V toolchains.}\\
+
+\entry
+{May 2021}
+{}
+{Persistant Variables}
+{\href{https://github.com/Nauscar/block-rs}{Github Repo}}
+{A persistent variable type that serializes/deserializes its value to/from disk upon declaration and drop.}\\
 \end{entrylist}
+
 %
 %\section{Awards}
 %\begin{entrylist}

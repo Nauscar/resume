@@ -50,12 +50,12 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage{unicode-math}
 
-\newfontfamily\bodyfont[]{Georgia}
-\newfontfamily\thinfont[]{Georgia}
-\newfontfamily\headingfont[]{Georgia}
+\newfontfamily\bodyfont[]{Fira Sans}
+\newfontfamily\thinfont[]{Fira Sans}
+\newfontfamily\headingfont[]{Fira Sans}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Georgia}
+\setmainfont[Mapping=tex-text, Color=textcolor]{Fira Sans}
 
 %\setmathfont{XITS Math}
 
@@ -146,7 +146,7 @@
 }
 %\renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[5]{%
-  \parbox[t]{1.4cm}{\footnotesize \textbf{#1} \\ \scriptsize\addfontfeature{Color=lightgray} #2}&\parbox[t]{12.2cm}{%    
+  \parbox[t]{1.4cm}{\footnotesize \textbf{#1} \\ \scriptsize\addfontfeature{Color=lightgray} #2}&\parbox[t]{14.0cm}{%    
     \textbf{#3}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #4}%
@@ -166,7 +166,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1.5, 3.33)
+  \begin{textblock}{3.6}(1.0, 3.33)
   \begin{flushright}
   \small
   \obeycr
@@ -317,7 +317,7 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.0cm,nohead,nofoot]{geometry}
+\RequirePackage[left=5.0cm,top=2.0cm,right=1.0cm,bottom=1.0cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
     colorlinks=false,       
