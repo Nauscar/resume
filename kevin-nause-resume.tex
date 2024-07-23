@@ -29,38 +29,41 @@
 \setlist[itemize]{leftmargin=*}
 \begin{document}
 
-\header{Kevin }{Nause}{\textit{Senior Security Software Engineer}} % Your name and current job title/field
+\header{Kevin }{Nause}{\textit{Computer Engineer | Ethical Hacker | Rustacean | Beekeeper }}
 
 %----------------------------------------------------------------------------------------
 %	SIDEBAR SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{aside} % In the aside, each new line forces a line break
-\section{Contact}
+\section{<Contact>}
 ~
 425.626.7520
 %+0 (000) 111 1112
 ~
 {\scriptsize \href{mailto:kevin@nause.engineering}{kevin@nause.engineering}}
-%\href{http://www.smith.com}{http://www.smith.com}
 {\scriptsize \href{https://linkedin.com/in/kevinnause}{linkedin.com/in/kevinnause}}
 {\scriptsize \href{https://github.com/Nauscar}{github.com/Nauscar}}
-\section{Programming}
+\section{<Programming>}
 Rust, C, C++, C\#,
-x86 \& ARM Assembly, 
+x86 \& ARM Assembly,
 Go, Python, Java
-\section{Frameworks}
+\section{<Frameworks>}
 OpenCL, OpenMP,
-Hadoop, Thrift, 
+Hadoop, Thrift,
 Qt, ASP .NET
-\section{Interests}
-{Embedded Systems, Photography, Performance Vehicles}
-\section{About}
+\section{<Interests>}
+{Embedded Systems, Photography, Performance Vehicles, Hockey}
+\section{<Projects>}
+{\href{https://github.com/Nauscar/rp-blink-twice}{RP2040 Blink Twice}}
+{\href{https://github.com/Nauscar/nrf52-fw-demo}{NRF52 Firmware Demo}}
+{\href{https://github.com/Nauscar/determinate}{Determinate}}
+{\href{https://github.com/Nauscar/block-rs}{Persistant Variables}}
+\section{<About>}
 {I enjoy low level programming on platforms such as embedded systems and operating systems.
-Working on wearable hacks and obtaining root access on mobile devices are also side interests. 
-Computer security and static analysis are key interests of mine. 
-I have been a Linux enthusiast since I typed "Hello World" for the first time and have adored penguins ever since. 
-The first thing I do when I sit down at a computer is change the keyboard layout to Dvorak and plug in an IBM Model M keyboard.}
+Computer security and static analysis are key interests of mine.
+I have been a Linux enthusiast since I typed ``Hello World'' for the first time and have adored penguins ever since.
+The first thing I do when I sit down at a computer is change the keyboard layout to Dvorak, plug in an IBM Model M keyboard, and set the monitor to portrait.}
 \end{aside}
 
 %----------------------------------------------------------------------------------------
@@ -88,9 +91,22 @@ The first thing I do when I sit down at a computer is change the keyboard layout
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Experience}
+\section{Full-Time Experience}
 
 \begin{entrylist}
+
+\entry
+{Sep 2023}
+{(to Present)}
+{Nause Engineering, LLC}
+{Renton, Washington}
+{\emph{Owner}
+\begin{itemize}
+\item Started a business with \$0
+\item Revenue from security consulting provides funding for product design
+\item See \hyperref[sec:contract-experience]{Contract Experience} for latest security consulting experience \\
+\end{itemize}
+}
 
 \entry
 {Feb 2020}
@@ -101,7 +117,7 @@ The first thing I do when I sit down at a computer is change the keyboard layout
 \begin{itemize}
 \item Lead security procedures between core, build, validation, and post-launch teams
 \item Vulnerability identification, mitigation, and incident response
-\item Performed threat modeling, static analysis, dynamic testing, and pentesting
+\item Performed threat modeling, static analysis, dynamic testing, and penetration testing
 \item Scoped security features and utilized cryptographic standards
 \item Communicated severity of known issues and compliance requirements
 \item Researched future security technologies for business success
@@ -122,11 +138,11 @@ Languages Used: Rust, C, C++, x86 \& ARM Assembly \\
 \item Scoped and lead multi-week hardware focused client engagements
 \item Hardware teardown, flash dumping, bus probing
 \item Reverse engineering C, C\#, and Java binaries
-\item Vulnerability assessment, code review, network pentesting
-\item ARM shell code creation and control highjacking attacks
+\item Vulnerability assessment, code review, network penetration testing
+\item ARM shell code creation and control hijacking attacks
 \item Automotive (CAN SAE J1939) and Robotics (ROS) security experience
 \end{itemize}
-Languages Used: C, ARM Assembly, Python, Go \\
+Languages Used: C, C++, ARM Assembly, Python, Go \\
 }
 
 \entry
@@ -148,6 +164,37 @@ Hardware: NXP/Freescale K22 ARM Cortex-M4 \\
 Languages Used: C, ARM Assembly, C\#, PowerShell \\
 }
 
+\end{entrylist}
+
+\goodbreak
+
+\newgeometry{left=1cm, right=1cm, top=1cm, bottom=1cm}
+\renewcommand{\entry}[5]{%
+  \parbox[t]{1.4cm}{\footnotesize \textbf{#1} \\ \scriptsize\addfontfeature{Color=lightgray} #2}&\parbox[t]{18.0cm}{%
+    \textbf{#3}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #4}%
+    \justify #5\vspace{\parsep}%
+  }\\}
+
+\section{Contract Experience}
+\label{sec:contract-experience}
+
+\begin{entrylist}
+
+\entry
+{Sep 2023}
+{to Present}
+{Tetrel Security}
+{Remote}
+{\emph{Principal Security Consultant}
+\begin{itemize}
+\item Hardware focused security assessments and research
+\end{itemize}
+Hardware: NVIDIA A100, ASPEED AST2600 \\
+Languages Used: Rust, C, C++, ARM Assembly, Python, Go \\
+}
+
 \entry
 {Aug 2015}
 {(5 months)}
@@ -156,27 +203,13 @@ Languages Used: C, ARM Assembly, C\#, PowerShell \\
 {\emph{Embedded Firmware Engineer}
 \begin{itemize}
 \item Implemented device drivers, recovery firmware, and system applications on the Pebble OS (based on FreeRTOS)
-\item Primary focus was porting the current firmware to an older device with significantly less flash storage and a black and white screen
+\item Ported latest firmware to an older device with significantly less flash storage and a black and white screen
 \item Optimized anti-aliasing on 8-bit displays, and dithering on 1-bit displays
 \end{itemize}
 Products: Pebble, Pebble Time, Pebble Time Round \\
 Hardware: STM32F4 ARM Cortex-M4, STM32F2 ARM Cortex-M3, TI CC2564 \\
 Languages Used: C, ARM Assembly, Python \\
 }
-
-\end{entrylist}
-
-\goodbreak
-\newgeometry{left=1cm, right=1cm, top=1cm, bottom=1cm}
-\renewcommand{\entry}[5]{%
-  \parbox[t]{1.4cm}{\footnotesize \textbf{#1} \\ \scriptsize\addfontfeature{Color=lightgray} #2}&\parbox[t]{18.0cm}{%    
-    \textbf{#3}%
-    \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #4}%
-    \justify #5\vspace{\parsep}%
-  }\\}
-
-\begin{entrylist}
 
 \entry
 {Jan 2015}
@@ -204,7 +237,7 @@ Languages Used: C, C++, Java \\
 \item Member of the Computer Aided Reasoning Group, reported to Dr. Vijay Ganesh
 \item Researched the topic of SAT solvers and their underlying heuristics
 \item Studied the relevance of backdoor variables and community structure for the VSIDS decision heuristic
-\item Experience with static analysis, symbolic execution, and Return Oriented Programming (ROP) 
+\item Experience with static analysis, symbolic execution, and Return Oriented Programming (ROP)
 \end{itemize}
 Languages Used: C, C++, x86 Assembly, Java \\
 }
@@ -250,40 +283,6 @@ Languages Used: C\# (ASP .NET), SQL, JavaScript \\
 Languages Used: C\#, Java \\
 }
 
-\end{entrylist}
-
-\section{Projects}
-\emph{Weekend projects demonstrating my learnings in Rust over the past year}\\
-
-\begin{entrylist}
-
-\entry
-{Nov 2021}
-{}
-{Determinate}
-{\href{https://github.com/Nauscar/determinate}{Github Repo}}
-{Procedural macro attributes to mark a function as determinate or indeterminate for testing runtime determinism.}\\
-
-\entry
-{Oct 2021}
-{}
-{NRF52 Firmware Demo}
-{\href{https://github.com/Nauscar/nrf52-fw-demo}{Github Repo}}
-{A demonstration of the Real-Time Interrupt-driven Concurrency (RTIC) framework running on the nrf52840.}\\
-
-\entry
-{Sep 2021}
-{}
-{Bare Metal Runtimes}
-{\href{https://github.com/Nauscar/rt-rs}{Github Repo}}
-{Bare metal Rust runtimes for no\_std for ARM and RISC-V toolchains.}\\
-
-\entry
-{May 2021}
-{}
-{Persistant Variables}
-{\href{https://github.com/Nauscar/block-rs}{Github Repo}}
-{A persistent variable type that serializes/deserializes its value to/from disk upon declaration and drop.}\\
 \end{entrylist}
 
 %
